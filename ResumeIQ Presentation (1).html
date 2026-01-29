@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeIQ - AI Resume Checker & ATS Scanner</title>
+    <style>
+        :root {
+            --color-bg-base: #0f172a;
+            --color-bg-elevated: #020617;
+            --color-bg-surface: #1e293b;
+            --color-text-primary: #f1f5f9;
+            --color-text-secondary: #cbd5e1;
+            --color-text-muted: #94a3b8;
+            --color-accent: #38bdf8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--color-bg-base);
+            color: var(--color-text-primary);
+        }
+
+        .slide {
+            width: 960px;
+            height: 540px;
+            margin: 0 auto 20px;
+            display: flex;
+            flex-direction: column;
+            padding: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 4rem;
+            right: 4rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(56, 189, 248, 0.3);
+            font-size: 0.875rem;
+            color: var(--color-accent);
+        }
+
+        .footer a {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--color-accent);
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--color-accent);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: var(--color-text-secondary);
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            margin-bottom: 0.75rem;
+            color: var(--color-text-secondary);
+            list-style: disc;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .meta {
+            font-size: 0.95rem;
+            color: var(--color-text-muted);
+            margin-top: 1.5rem;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+        }
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .tech-item {
+            background-color: var(--color-bg-surface);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--color-accent);
+        }
+
+        .tech-item h4 {
+            color: var(--color-accent);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .tech-item p {
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .impact-item {
+            background-color: var(--color-bg-surface);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--color-accent);
+        }
+
+        .impact-item h4 {
+            color: var(--color-accent);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .impact-item p {
+            font-size: 0.95rem;
+            margin: 0;
+            color: var(--color-text-secondary);
+        }
+    </style>
+</head>
+<body>
+
+<!-- SLIDE 1: Title and Introduction -->
+<section class="slide">
+    <div class="slide-content center">
+        <h1>ResumeIQ</h1>
+        <p class="subtitle">AI-Powered Resume Checker & ATS Scanner</p>
+        <p style="font-size: 1.25rem; color: var(--color-text-secondary); margin-top: 2rem;">Intelligent resume optimization and ATS compatibility analysis powered by AI</p>
+        <div class="meta">
+            <p style="margin: 0.5rem 0; font-size: 0.95rem;">Problem Domain: Career Development & Recruitment Technology</p>
+        </div>
+    </div>
+    <div class="footer">
+        GitHub: <a href="https://github.com/lakshyasiingh/Fortex36" target="_blank">github.com/lakshyasiingh/Fortex36</a>
+    </div>
+</section>
+
+<!-- SLIDE 2: Problem and Motivation -->
+<section class="slide">
+    <div class="slide-content">
+        <h2>Problem & Motivation</h2>
+        <ul>
+            <li><strong>Problem:</strong> Job seekers spend hours on resumes without knowing if they'll pass ATS filters or catch recruiter attention</li>
+            <li><strong>Gap:</strong> Existing tools lack real-time AI feedback on resume quality, keyword optimization, and ATS compatibility</li>
+            <li><strong>Impact:</strong> Qualified candidates lose opportunities due to poor resume formatting and keyword mismatch</li>
+            <li><strong>Solution Need:</strong> Automated, intelligent resume analysis that provides actionable, personalized feedback</li>
+        </ul>
+    </div>
+    <div class="footer">
+        GitHub: <a href="https://github.com/lakshyasiingh/Fortex36" target="_blank">github.com/lakshyasiingh/Fortex36</a>
+    </div>
+</section>
+
+<!-- SLIDE 3: Solution Overview -->
+<section class="slide">
+    <div class="slide-content">
+        <h2>Solution Overview</h2>
+        <h3 style="font-size: 1.25rem; margin-top: 0; margin-bottom: 1rem;">Core Features</h3>
+        <ul>
+            <li><strong>ATS Compatibility Scanner:</strong> Analyzes resume format, structure, and keywords against ATS algorithms</li>
+            <li><strong>AI-Powered Feedback:</strong> Identifies strengths, weaknesses, and actionable improvements</li>
+            <li><strong>Keyword Optimization:</strong> Suggests industry-specific keywords and skills to match job descriptions</li>
+            <li><strong>Real-time Score:</strong> Generates ATS compatibility score and readability metrics</li>
+        </ul>
+    </div>
+    <div class="footer">
+        GitHub: <a href="https://github.com/lakshyasiingh/Fortex36" target="_blank">github.com/lakshyasiingh/Fortex36</a>
+    </div>
+</section>
+
+<!-- SLIDE 4: Technology and Architecture -->
+<section class="slide">
+    <div class="slide-content">
+        <h2>Technology & Architecture</h2>
+        <div class="tech-stack">
+            <div class="tech-item">
+                <h4>Frontend</h4>
+                <p>React.js, Next.js, Tailwind CSS for responsive UI</p>
+            </div>
+            <div class="tech-item">
+                <h4>Backend</h4>
+                <p>Node.js, Express.js, REST APIs for resume processing</p>
+            </div>
+            <div class="tech-item">
+                <h4>AI/ML</h4>
+                <p>NLP models (spaCy, BERT) for text analysis and keyword extraction</p>
+            </div>
+            <div class="tech-item">
+                <h4>Database</h4>
+                <p>MongoDB for resume data storage and user profiles</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        GitHub: <a href="https://github.com/lakshyasiingh/Fortex36" target="_blank">github.com/lakshyasiingh/Fortex36</a>
+    </div>
+</section>
+
+<!-- SLIDE 5: Implementation and Results -->
+<section class="slide">
+    <div class="slide-content">
+        <h2>Implementation & Results</h2>
+        <h3 style="font-size: 1.25rem; margin-top: 0; margin-bottom: 1rem;">Core Modules & Achievements</h3>
+        <ul>
+            <li><strong>Resume Parser:</strong> Extracts text, formatting, and structure from uploaded PDFs/DOCs</li>
+            <li><strong>ATS Analysis Engine:</strong> Evaluates keyword density, formatting, and compatibility score</li>
+            <li><strong>AI Recommendations:</strong> Generates personalized improvement suggestions with examples</li>
+            <li><strong>Live Demo:</strong> Users can upload resumes and receive instant AI-powered feedback dashboard</li>
+        </ul>
+    </div>
+    <div class="footer">
+        GitHub: <a href="https://github.com/lakshyasiingh/Fortex36" target="_blank">github.com/lakshyasiingh/Fortex36</a>
+    </div>
+</section>
+
+<!-- SLIDE 6: Conclusion and Future Scope -->
+<section class="slide">
+    <div class="slide-content">
+        <h2>Conclusion & Future Scope</h2>
+        <h3 style="font-size: 1.25rem; margin-top: 0; margin-bottom: 1rem;">Impact</h3>
+        <p>ResumeIQ empowers job seekers with data-driven resume optimization, significantly improving ATS pass rates and interview opportunities.</p>
+        <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Future Enhancements</h3>
+        <ul style="margin-top: 0.5rem;">
+            <li>Integration with job boards (LinkedIn, Indeed) for real-time job matching</li>
+            <li>Multi-language support for global resume optimization</li>
+            <li>Cover letter generation and optimization</li>
+            <li>Interview preparation with AI coaching</li>
+        </ul>
+    </div>
+    <div class="footer">
+        GitHub: <a href="https://github.com/lakshyasiingh/Fortex36" target="_blank">github.com/lakshyasiingh/Fortex36</a>
+    </div>
+</section>
+
+</body>
+</html>
